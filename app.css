@@ -1,0 +1,109 @@
+body{
+  padding-top: 60px;
+  overflow-x: hidden;
+}
+a:hover{
+  text-decoration: none;
+}
+.start-mid{
+  margin-top:10%;
+}
+.pc-show,.ph-show{
+  display: none;
+}
+@media screen and (max-width: 768px){
+  .start-mid{
+    margin-top:30%;
+  }
+  .ph-show{
+    display: block;
+  }
+}
+@media screen and (min-width: 769px){
+  .pc-show{
+    display: block;
+  }
+}
+.pName{
+  text-align: center;
+  font-size: 70px;
+  color: #1b6d85;
+  cursor: pointer;
+}
+.start-img{
+  width: 100%;
+}
+.main-line{
+  display: inline-block;
+  color: #7F5E5E;
+  border: 1px solid #ddd;
+  padding: 15px;
+}
+.main-price{
+  color: #f00;
+  padding-top: 5px;
+  border-top: 1px solid #eee;
+}
+.main-top{
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+.main-fixed{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 50px;
+  background: #ddd;
+}
+.main-footer{
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+.main-footer li{
+  display: inline-block;
+  line-height: 50px;
+  width:30%;
+  text-align: center;
+}
+.main-footer li:hover{
+  background: #eeeeee;
+}
+#address{
+  width: 100%;
+}
+.order-success{
+  padding: 10px;
+}
+.order-go{
+  font-size: 0.8em;
+}
+#myorder-table tr td{
+  vertical-align: middle;
+}
+
+.page{
+  transition: all .25s linear;
+  position:absolute;
+  width: 100%;
+}
+.page.ng-leave{/*即将离开的ngView动画开始的样式*/
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+.page.ng-leave.ng-leave-active{/*即将要离开的ngView动画结束时的样式*/
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+.page.ng-enter{/*即将进入的ngView动画开始的样式*/
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+.page.ng-enter.ng-enter-active{/*即将要进入的ngView动画结束时的样式*/
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}

@@ -1,0 +1,25 @@
+<div ng-include="headerFile"></div>
+<div class="container">
+  <div class="panel panel-default">
+    <ul class="breadcrumb">
+      <li class="active"><span data-target="#">首页</span></li>
+      <li><span data-target="#">详情</span></li>
+    </ul>
+    <h2>{{detail[0].name}}</h2>
+    <div class="panel-body">
+      <img class="img-responsive" src="img/{{detail[0].img_lg}}" alt=""/>
+      <br/>
+      <p>{{detail[0].material}}</p>
+      <div class="text-justify">{{detail[0].detail}}</div>
+      <br/>
+      <div class="main-price">{{detail[0].price}}</div>
+    </div>
+    <div class="panel-footer text-right">
+      <a href="#/order/{{detail[0].did}}" class="btn btn-success">我要订餐</a>
+      <button ng-click="" class="btn btn-warning">我再看看</button>
+    </div>
+  </div>
+  <br/>
+  <br/>
+</div>
+<div ng-include="footerFile"></div>
